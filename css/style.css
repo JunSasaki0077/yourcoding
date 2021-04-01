@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
 body {
   font-family: 'Noto Sans JP', sans-serif;
   width: 100%;
@@ -301,14 +301,14 @@ body {
   display: inline-block;
   font-size: 32px;
   height: 138px;
-  line-height: 54px;
+  line-height: 46px;
 }
 
 .sec01__inner-about p {
   width: 254px;
-  padding: 45px 0;
+  margin: 44px 0 45px 0;
   height: 96px;
-  line-height: 27px;
+  line-height: 24px;
 }
 
 .sec01__inner-aboutBtn {

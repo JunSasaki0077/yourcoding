@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @mixin content__btn($color) {
   width: 155px;
   height: 37px;
@@ -34,7 +34,7 @@
   }
 }
 
-@mixin sec2__feature($height) {
+@mixin sec2__feature($bottom, $height) {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -42,12 +42,20 @@
   h5 {
     font-size: 24px;
     line-height: 48px;
-    padding-bottom: 45px;
+    padding-bottom: $bottom;
   }
   p {
     font-size: 16px;
     line-height: $height;
   }
+}
+
+@mixin sec02__subTtl($bottom) {
+  padding-top: 57px;
+  padding-bottom: $bottom;
+  text-align: center;
+  font-size: 28px;
+  line-height: 26px;
 }
 
 body {
@@ -265,13 +273,13 @@ body {
         display: inline-block;
         font-size: 32px;
         height: 138px;
-        line-height: 54px;
+        line-height: 46px;
       }
       p {
         width: 254px;
-        padding: 45px 0;
+        margin: 44px 0 45px 0;
         height: 96px;
-        line-height: 27px;
+        line-height: 24px;
       }
       &Btn {
         @include content__btn(#fff);
@@ -353,21 +361,21 @@ body {
     @include sec__ttl(94px, 46px);
   }
 
-  h4 {
-    padding-top: 57px;
-    text-align: center;
-    font-size: 28px;
-    line-height: 26px;
-  }
   #subTtl {
     line-height: 40px;
   }
 
   &__feature1 {
-    @include sec2__feature(26px);
+    @include sec2__feature(45px, 26px);
+    &-ttl {
+      @include sec02__subTtl(49px);
+    }
   }
   &__feature2 {
-    @include sec2__feature(26px);
+    @include sec2__feature(40px, 26px);
+    &-ttl {
+      @include sec02__subTtl(33px, 59px);
+    }
     &-about {
       order: 2;
     }
@@ -378,6 +386,9 @@ body {
 
   &__feature3 {
     @include sec2__feature(28px);
+    &-ttl {
+      @include sec02__subTtl(62px);
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -425,11 +436,9 @@ body {
   margin-top: 86px;
   &__ttl {
     @include sec__ttl(55px, 28px);
-    h3 {
-      line-height: 28px;
-    }
     p {
       padding-top: 0;
+      padding-bottom: 70px;
     }
   }
 
@@ -499,7 +508,9 @@ body {
 .sec04 {
   &__ttl {
     @include sec__ttl(55px, 28px);
-
+    h3 {
+      padding-bottom: 10px;
+    }
     p {
       padding-bottom: 32px;
     }
@@ -559,6 +570,9 @@ body {
   height: 668px;
   &__ttl {
     @include sec__ttl(55px, 28px);
+    h3 {
+      padding-bottom: 11px;
+    }
   }
   &__content {
     display: flex;
@@ -636,8 +650,11 @@ body {
 .sec06 {
   margin-bottom: 90px;
   &__ttl {
-    @include sec__ttl(68px, 28px);
+    @include sec__ttl(55px, 28px);
     padding-bottom: 68px;
+    h3 {
+      padding-bottom: 11px;
+    }
   }
 
   &__content {
@@ -689,6 +706,9 @@ body {
   &__ttl {
     @include sec__ttl(63px, 28px);
     color: #fff;
+    h3 {
+      padding-bottom: 7px;
+    }
     p {
       color: #fff;
     }
@@ -705,12 +725,13 @@ body {
     height: 689px;
     padding-left: 63px;
     padding-top: 34px;
+    padding-bottom: 35px;
     background-color: #fff;
     &-item {
       label {
         display: flex;
         font-size: 16px;
-
+        padding-top: 4px;
         line-height: 26px;
         p {
           text-align: center;
@@ -745,7 +766,7 @@ body {
       align-items: center;
       justify-content: center;
       margin-top: 27px;
-      margin-bottom: 38px;
+      margin-bottom: 30px;
       input {
         width: 20px;
         height: 20px;
