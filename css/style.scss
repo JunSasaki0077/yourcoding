@@ -374,7 +374,7 @@ body {
   &__feature2 {
     @include sec2__feature(40px, 26px);
     &-ttl {
-      @include sec02__subTtl(33px, 59px);
+      @include sec02__subTtl(59px);
     }
     &-about {
       order: 2;
@@ -385,7 +385,7 @@ body {
   }
 
   &__feature3 {
-    @include sec2__feature(28px);
+    @include sec2__feature(33px, 28px);
     &-ttl {
       @include sec02__subTtl(62px);
     }
@@ -405,7 +405,7 @@ body {
       }
     }
   }
-  @media (max-width: 375px) {
+  @media (max-width: 767px) {
     &__feature1,
     &__feature2,
     &__feature3 {
