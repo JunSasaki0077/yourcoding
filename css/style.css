@@ -397,7 +397,7 @@ body {
     margin: 0 auto;
   }
   .sec01__inner img {
-    width: 100%;
+    width: 60%;
     padding-top: 50px;
   }
 }
@@ -1118,7 +1118,7 @@ body {
     padding-left: 0px;
   }
   .sec07__form-item {
-    padding-left: 10px;
+    padding-left: 30px;
   }
   .sec07__form-item input {
     width: 80%;
@@ -1127,7 +1127,7 @@ body {
     width: 80%;
   }
   .sec07__form-checkbox input {
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
   }
 }
 
