@@ -397,7 +397,8 @@ body {
     margin: 0 auto;
   }
   .sec01__inner img {
-    width: 60%;
+    width: 80%;
+    height: auto;
     padding-top: 50px;
   }
 }
