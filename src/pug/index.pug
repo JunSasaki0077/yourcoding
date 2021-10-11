@@ -1,0 +1,180 @@
+extends ./includes/_layout
+block titles
+  - var title = 'YourCoding'
+block content
+
+  include ./includes/_header
+
+  section.fv#top
+    .fv__inner
+      .fv__inner-about
+          h2 コーディングの手間を<br/>
+            | 最小に、デザインに注力<br/>
+            | する助けに
+          p ユアコーディングはコーディングに <br/>
+            | 特化したフリーランス <br />
+            |デザインに注力されたい方の <br />
+            | 助けになります
+          button.fv__inner-aboutBtn
+            a.topmove(href="#contact") お問い合わせ
+      img(src="https://JunSasaki0077.github.io/yourcoding/img/main.png" alt="メイン")
+
+  section.about
+    #feature.about__ttl(data-aos="fade-up")
+        h3 ユアコーディング３つの特徴
+        p FEATURES
+    h4.about__feature1-ttl(data-aos="fade-up") 高速コーディング
+    .about__feature1(data-aos="fade-up")
+      img(src="https://JunSasaki0077.github.io/yourcoding/img/feature01.png" alt="特徴１")
+      .about__feature-about
+        h5 コーディングに特化したフリーランスのため、<br />
+            | スピード感を持った開発が可能
+        p 開発は常にスピードとの勝負です。<br />
+          | ユアコーディングはコーディングに特化しているため、<br />
+          | 素早く納品することで、クライアントがデザインに注力 <br />
+          | する助けとなります。
+    h4.about__feature2-ttl(data-aos="fade-up") 高品質
+    .about__feature2(data-aos="fade-up")
+      img(src="https://JunSasaki0077.github.io/yourcoding/img/feature02.png" alt="特徴２")
+      .about__feature-about
+        h5 正しいマークアップで、<br />
+          | 内部SEOに強いコーディングを <br />
+          | デフォルトで行います。
+        p ユアコーディングでは、「予測しやすい」「再利用しやすい」<br />
+          | 「保守しやすい」「拡張しやすい」と言った設計をもとに<br />
+          | きちんとコーディングを行うため、納品後も安心です。
+    h4.about__feature3-ttl(data-aos="fade-up") 迅速なレスポンス
+    .about__feature3(data-aos="fade-up")
+      img(src="https://JunSasaki0077.github.io/yourcoding/img/feature03.png" alt="特徴３")
+      .about__feature-about
+        h5 原則いただいたメッセージは、<br />
+            | 業務時間内であれば６時間以内に <br />
+            | お返しいたします。
+        p 連絡を返さないフリーランスが多い中、<br />
+          | ユアコーディングでは定期的な進捗報告など、<br />
+          | 社会人としての基本を踏まえて仕事を行って <br />
+          | おります。
+
+  section.price#price
+    .price__ttl(data-aos="fade-up")
+      h3 価格
+      p PRICE
+    table(data-aos="fade-up")
+      tr
+        th HTMLコーディングトップページ
+        td 30.000円〜
+      tr
+        th HTMLコーディング下層1ページ
+        td 10.000円〜
+      tr
+        th HTML+WordPressトップページ
+        td 55.000円〜
+      tr
+        th HTML+WordPress下層1ページ
+        td 15.000円〜
+    p(data-aos="fade-up") ＊詳細な価格はページや仕様によって異なります
+
+  section.faq
+    .faq__ttl(data-aos="fade-up")
+      h3 よくある質問
+      p FAQ
+    dl.faq__acmenu(data-aos="fade-up")
+      dt デザインから一貫してお願いすることは可能でしょうか
+      dd.faq__open ユアコーディングはコーディングに特化したサービスですので、デザインからお受けすることは基本手にありません。<br />
+                      | ただデザインを行う際は連携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。
+      dt WordPressのカスタマイズをお願いすることも可能でしょうか？
+      dd 可能です。ただECサイトなどの場合は構築難易度や工数の関係で綿密にヒアリングさせていただきたく思います。
+      dt コーディングのスピード感が知りたい
+      dd HTMLレスポンシブ込み５ページで1週間、10ページで2週間、WordPressサイト5ページで2週間、10ページで3週間が目安に<br />
+        | なります。
+
+  section.blog
+    .blog__ttl(data-aos="dade-up")
+      h3 ブログ
+      p BLOG
+    .blog__content
+      .blog__content-item(data-aos="fade-up")
+        img(src="https://JunSasaki0077.github.io/yourcoding/img/austin-distel-wawEfYdpkag-unsplash.png")
+        h4 サイトをリニューアルしました。
+        p 2020.01.23
+      .blog__content-item(data-aos="fade-up")
+        img(src="https://JunSasaki0077.github.io/yourcoding/img/dylan-gillis-KdeqA3aTnBY-unsplash.png")
+        h4 WebサイトでSEO内部施策に適したコー <br />
+          | ディングでどれぐらいサイトが早くなるの <br />
+          | か検証してみましたみました。
+        p 2020.01.24
+      .blog__content-item(data-aos="fade-up")
+        img(src="https://JunSasaki0077.github.io/yourcoding/img/brooke-cagle-g1Kr4Ozfoac-unsplash.png")
+        h4 ユアコーディングではデザイナーの方を <br />
+          |広く募集しています。
+        p 2020.01.25
+
+  section.work
+    .work__ttl(data-aos="fade-up")
+      h3 制作実績
+      p WORK
+    .work__content.swiper-container
+      .swiper-wrapper
+        .work__content-item.swiper-slide
+          img(src="https://JunSasaki0077.github.io/yourcoding/img/austin-distel-wawEfYdpkag-unsplash.png")
+          h4 コーディングカンファレンスのイベント <br />
+              | LPの制作を行いました！
+          ul
+            li 採用技術：jQuery,WordPress
+            li 実装期間：4週間
+            li 担当コーダー：石井
+        .work__content-item.swiper-slide
+          img(src="https://JunSasaki0077.github.io/yourcoding/img/digital-marketing-1433427_1280.png")
+          h4 株式会社サンプル様採用サイトのコーデ <br />
+              | ィングを行いました！
+          ul
+            li 採用技術：jQuery,Bootstrap4
+            li 実装期間：2週間
+            li 担当コーダー：石井
+        .work__content-item.swiper-slide
+          img(src="https://JunSasaki0077.github.io/yourcoding/img/hal-gatewood-tZc3vjPCk-Q-unsplash.png")
+          h4 株式会社サンプル様通販サイトのコーデ <br />
+              | ィングを行いました！
+          ul
+            li 採用技術：jQuery,Bootstrap4
+            li 実装期間：6週間
+            li 担当コーダー：石井
+
+  section.contact#contact
+    .contact__ttl(data-aos="fade-up")
+      h3 お問い合わせ
+      p CONTACT
+      h4 コーディングの人手が足りない時、 <br />
+        | あなたのちからになります。
+    form.contact__form(action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScz2CnaP-tRmiDjnHFD8ytuVeUmWdA_-ko2CZQQWm9j0Crr4w/formResponse" id="form" data-aos="fade-up")
+      .contact__form-item
+        label お名前
+          p 必須
+        input(type="text" name="entry.1535161883" placeholder="お名前" required)
+      .contact__form-item
+        label メールアドレス
+          p 必須
+        input(type="mail" name="entry.1883068322" placeholder="メールアドレス" required)
+      .contact__form-item
+        label お問い合わせ内容
+          p 必須
+        textarea(placeholder="お問い合わせ内容" name="entry.1842456706" required)
+      .contact__form-checkbox
+        input(type="checkbox" name="entry.53397109" id="privacyCheck" required)
+        p プライバシーポリシーに同意する
+      .contact__form-submit
+        button.contact__form-submit-btn
+          a#js-submit 送信
+      p.contact__form-endMessage お問い合わせありがとうございました
+
+  footer.footer
+    nav.footer__nav
+      h3 ユアコーディング
+      ul
+        li
+          a(href="#") プライバシーポリシー
+        li
+          a(href="#") 個人商取引法に基づく表記
+      p ©ユアコーディング,All Rights Reserved.
+
+  include ./includes/_script
